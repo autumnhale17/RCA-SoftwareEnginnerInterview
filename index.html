@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                         initial-scale=1.0">
+    <title>Dashboard Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://recoveryclubamerica.com/"><img src="logoRCA.png" class="logo"></a>
+    </header>
+
+    <div class="full-form-section">
+        <div class="slider"></div>
+        <div class="action-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+
+        <div class="input-form-section">
+            <div class="login-box">
+                <input type="email" id="loginEmail" placeholder="sample@email.com">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button type="submit" class="login-button" onClick="validateLogin()">Login</button>
+                <span id="message"> </span>
+            </div>
+
+
+            <div class="signup-box">
+                <input type="email" id="signupEmail" placeholder="sample@email.com">
+                <input type="password" id="signupPassword" placeholder="Password">
+                <input type="password" id="signupPasswordConfirm" placeholder="Confirm password">
+                <button type="submit" class="signup-button" onClick="validateSignup()">Sign Up</button>
+                <span id="invalidMsg"> </span>Password must be 8+ characters, contain an uppercase letter, and include a
+                symbol.<br><br>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
